@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#151517</color>
+    <color name="colorPrimaryDark">#151517</color>
+    <color name="colorAccent">#0E689F</color>
+
+    <!--    neofuckism-->
+    <color name="neomorph_background_color">#141517</color>
+    <color name="neomorph_shadow_color">#0a0a0a</color>
+    <color name="neomorph_highlight_color">#2E2E30</color>
+
+
+    <integer name="button_pressed_animation_duration">100</integer>
+    <integer name="button_pressed_animation_delay">100</integer>
+</resources>

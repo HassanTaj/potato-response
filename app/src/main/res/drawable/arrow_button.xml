@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- enabled button -->
+    <item
+        android:state_enabled="true"
+        android:state_pressed="false"
+        android:state_focused="false">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="2"
+            android:useLevel="false">
+
+
+            <gradient
+                android:startColor="#ee2c6dbc"
+                android:centerColor="#ee2c6dbc"
+                android:endColor="#ee2862a9"
+                android:angle="90"/>
+            <!--<size android:width="70dp"-->
+            <!--android:height="70dp"/>-->
+            <stroke
+                android:width="6dip"
+                android:color="#ffb67e" />
+        </shape>
+
+    </item>
+    <!--Button Pressed-->
+    <item
+        android:state_pressed="true"
+        android:state_focused="false"
+        android:state_enabled="true">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="2"
+            android:useLevel="false">
+
+
+            <gradient
+                android:startColor="#1e4f8b"
+                android:centerColor="#1e4f8b"
+                android:endColor="#1e4f8b"
+                android:angle="90"/>
+            <!--<size android:width="70dp"-->
+            <!--android:height="70dp"/>-->
+            <stroke
+                android:width="6dip"
+                android:color="#00ff48" />
+        </shape>
+    </item>
+
+    <!--    dissabled button        -->
+    <item
+        android:state_pressed="false"
+        android:state_focused="false"
+        android:state_enabled="false">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="2"
+            android:useLevel="false">
+
+
+            <!--<gradient-->
+            <!--android:startColor="#747b84"-->
+            <!--android:centerColor="#747b84"-->
+            <!--android:endColor="#747b84"-->
+            <!--android:angle="90"/>-->
+            <!--<size android:width="70dp"-->
+            <!--android:height="70dp"/>-->
+            <stroke
+                android:width="6dip"
+                android:color="#50ddff" />
+        </shape>
+    </item>
+
+    <!-- focused -->
+
+    <item
+        android:state_pressed="false"
+        android:state_focused="true"
+        android:state_enabled="false">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="2"
+            android:useLevel="false">
+
+
+            <gradient
+                android:startColor="#1e4f8b"
+                android:centerColor="#1e4f8b"
+                android:endColor="#1e4f8b"
+                android:angle="90"/>
+            <!--<size android:width="70dp"-->
+            <!--android:height="70dp"/>-->
+            <stroke
+                android:width="6dip"
+                android:color="#00ff48" />
+        </shape>
+    </item>
+
+
+</selector>

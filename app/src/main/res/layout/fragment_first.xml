@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/responseTextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neomorph_background_color="@color/neomorph_background_color"
+        app:neomorph_corner_radius="12dp"
+        app:neomorph_elevation="4dp"
+        app:neomorph_highlight_color="@color/neomorph_highlight_color"
+        app:neomorph_shadow_color="@color/neomorph_shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/responseText"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="174dp"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="24dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:gravity="start|top"-->
+        <!--            android:inputType="textMultiLine"-->
+        <!--            android:textColor="#cdcdcd"-->
+        <!--            android:autofillHints="Switch" />-->
+        <EditText
+            android:id="@+id/responseText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="Switch"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:textColor="#cdcdcd" />
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/saveResponseTextBtnContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/responseTextContainer"
+        app:neomorph_background_color="@color/neomorph_background_color"
+        app:neomorph_corner_radius="12dp"
+        app:neomorph_elevation="4dp"
+        app:neomorph_highlight_color="@color/neomorph_highlight_color"
+        app:neomorph_shadow_color="@color/neomorph_shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <Button
+            android:id="@+id/saveResponseTextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/basic_neo_btn"
+            android:text="Save Reply"
+            android:layout_margin="2dp"
+            android:textColor="#ffff" />
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/serviceActiveStatusContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveResponseTextBtnContainer"
+        app:neomorph_background_color="@color/neomorph_background_color"
+        app:neomorph_corner_radius="12dp"
+
+        app:neomorph_elevation="4dp"
+        app:neomorph_highlight_color="@color/neomorph_highlight_color"
+        app:neomorph_shadow_color="@color/neomorph_shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <Switch
+            android:id="@+id/serviceActiveStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="@string/auto_reply"
+            android:textColor="#cdcdcd" />
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/simSelectRadioGroupContiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/serviceActiveStatusContainer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveResponseTextBtnContainer"
+        app:neomorph_background_color="@color/neomorph_background_color"
+
+        app:neomorph_corner_radius="12dp"
+        app:neomorph_elevation="4dp"
+        app:neomorph_highlight_color="@color/neomorph_highlight_color"
+
+        app:neomorph_shadow_color="@color/neomorph_shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular">
+
+        <RadioGroup
+            android:id="@+id/simSelectRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="4dp"
+            android:layout_marginEnd="2dp">
+
+            <RadioButton
+                android:id="@+id/sim1Radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim 1"
+                android:textColor="#cdcdcd" />
+
+            <RadioButton
+                android:id="@+id/sim2Radio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sim 2"
+                android:textColor="#cdcdcd" />
+        </RadioGroup>
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/pvslogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:neomorph_corner_radius="12dp"
+        app:neomorph_elevation="4dp"
+        app:neomorph_highlight_color="@color/neomorph_highlight_color"
+        app:neomorph_shadow_color="@color/neomorph_shadow_color"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_view_type="rectangular"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:maxHeight="50dp"
+                android:src="@mipmap/pv_foreground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_name"
+                android:textAlignment="textStart"
+                android:textColor="#ffff"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:text="@string/app_version"
+                android:textAlignment="textEnd"
+                android:textColor="#ffff"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.09" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

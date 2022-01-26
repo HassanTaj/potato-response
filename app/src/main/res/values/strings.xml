@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Potato Response</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">responderchan@perspective-v.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="start_services">Start Services</string>
+    <string name="auto_reply">Responding</string>
+    <string name="stop_services">Stop Services</string>
+
+    <string name="response_notification_title">On Watch</string>
+    <string name="response_notification_description">I will respond to every text and call received.</string>
+    <string name="response_notification_stop_action">STOP IT</string>
+
+    <string name="app_version">(beta 0.4.4.1)</string>
+    <string name="team_name">Perspective-V</string>
+</resources>
